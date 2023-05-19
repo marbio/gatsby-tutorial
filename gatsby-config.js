@@ -1,9 +1,9 @@
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Using Gatsby Head`,
+    description: `Example project for the Gatsby Head API`,
+    twitterUsername: `@gatsbyjs`,
+    image: `/static/icon.png`,
+    siteUrl: `http://localhost:8000`,
   },
-  plugins: [],
-}
+};

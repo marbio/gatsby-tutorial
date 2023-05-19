@@ -1,5 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
+import { SeoData } from "../components/seo";
 
 const IndexPage = () => {
   return (
@@ -8,13 +9,8 @@ const IndexPage = () => {
     </Layout>
   );
 };
-
-export const Head = () => (
-  <>
-    <title>Homepage</title>
-    <meta name='description' content='Gatsby tutorial example' />
-  </>
-);
-
-// Step 3: Export your component
 export default IndexPage;
+
+export const Head = () => {
+  <SeoData title='Homepage'></SeoData>;
+};
