@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import { SeoData } from "../components/seo";
+import Seo from "../components/seodata";
 
 const AboutPage = () => {
   return (
@@ -12,8 +12,6 @@ const AboutPage = () => {
   );
 };
 
-export const Head = () => {
-  <SeoData></SeoData>;
-};
+export const Head = () => <Seo title='About' />;
 
 export default AboutPage;

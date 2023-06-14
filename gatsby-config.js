@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Using Gatsby Head`,
+    title: `My first gatsby site`,
     description: `Example project for the Gatsby Head API`,
     twitterUsername: `@gatsbyjs`,
     image: `/static/icon.png`,
