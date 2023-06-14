@@ -1,16 +1,16 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import { SeoData } from "../components/seo";
+import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle='Homepage'>
+    <Layout pageTitle='Home Page'>
       <p>I'm making this by following the Gatsby Tutorial.</p>
+      <StaticImage alt='Porsche 911 RS' src='../static/images/rs.jpg' />
     </Layout>
   );
 };
-export default IndexPage;
 
-export const Head = () => {
-  <SeoData title='Homepage'></SeoData>;
-};
+export const Head = () => <title>Home Page</title>;
+
+export default IndexPage;
