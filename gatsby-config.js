@@ -6,5 +6,15 @@ module.exports = {
     image: `/static/icon.png`,
     siteUrl: `http://localhost:8000`,
   },
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp"],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/blog`,
+      },
+    },
+  ],
 };
